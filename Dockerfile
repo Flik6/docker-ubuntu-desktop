@@ -38,10 +38,6 @@ ADD ./src/scripts/ $STARTUPDIR/
 RUN $INST_SCRIPTS/tools.sh
 ENV LANG='zh_CN.UTF-8' LANGUAGE='zh_CN.UTF-8' LC_ALL='zh_CN.UTF-8'
 
-### change language
-RUN chmod +x $INST_SCRIPTS/change_language.sh
-RUN $INST_SCRIPTS/change_language.sh
-
 ### Install custom fonts
 RUN $INST_SCRIPTS/install_custom_fonts.sh
 
