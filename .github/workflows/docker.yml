@@ -12,7 +12,7 @@ on:
 # 定义 DOCKERHUB_REPO 标记 docker hub repo 名称
 env:
   APP_NAME: docker-ubuntu-desktop
-  DOCKERHUB_REPO: imgyh/docker-ubuntu-desktop
+  DOCKERHUB_REPO: flik007/docker-ubuntu-desktop
 
 jobs:
   main:
