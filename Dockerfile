@@ -12,8 +12,8 @@ LABEL maintainer="flik<admin@92coco.cn>"
 # VNC port:5901
 # noVNC webport, connect via http://IP:6901/?password=vncpassword
 ENV DISPLAY=:1 \
-    VNC_PORT=5901 \
-    NO_VNC_PORT=6901
+    VNC_PORT=5201 \
+    NO_VNC_PORT=5202
 EXPOSE $VNC_PORT $NO_VNC_PORT
 
 ### Envrionment config
@@ -37,6 +37,10 @@ ADD ./src/scripts/ $STARTUPDIR/
 ### Install some common tools
 RUN $INST_SCRIPTS/tools.sh
 ENV LANG='zh_CN.UTF-8' LANGUAGE='zh_CN.UTF-8' LC_ALL='zh_CN.UTF-8'
+
+### change language
+RUN chmod +x $INST_SCRIPTS/change_language.sh
+RUN $INST_SCRIPTS/change_language.sh
 
 ### Install custom fonts
 RUN $INST_SCRIPTS/install_custom_fonts.sh
