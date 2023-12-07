@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# 检查是否以root权限运行
-if [ "$EUID" -ne 0 ]; then
-  echo "请使用root权限运行此脚本"
-  exit 1
-fi
-
 # 安装中文语言包
 apt-get install -y language-pack-zh-hans
 
