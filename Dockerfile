@@ -36,7 +36,7 @@ ADD ./src/scripts/ $STARTUPDIR/
 
 ### Install some common tools
 RUN $INST_SCRIPTS/tools.sh
-ENV LANG='en_US.UTF-8' LANGUAGE='en_US.UTF-8' LC_ALL='en_US.UTF-8'
+ENV LANG='zh_CN.UTF-8' LANGUAGE='zh_CN.UTF-8' LC_ALL='zh_CN.UTF-8'
 
 ### Install custom fonts
 RUN $INST_SCRIPTS/install_custom_fonts.sh
