@@ -2,7 +2,7 @@
 
 FROM ubuntu:20.04
 
-LABEL maintainer="imgyh<admin@imgyh.com>"
+LABEL maintainer="flik<admin@92coco.cn>"
 
 # change apt sources
 #RUN sed -i s/archive.ubuntu.com/mirrors.aliyun.com/g /etc/apt/sources.list \
